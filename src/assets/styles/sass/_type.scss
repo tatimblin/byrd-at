@@ -1,0 +1,16 @@
+@mixin Heading--lead
+{
+  font-size: 48px;
+}
+
+@mixin Heading--head
+{
+  margin-bottom: $spacing-text;
+  font-size: 32px;
+}
+
+@mixin Heading--sub
+{
+  margin-bottom: $spacing-text;
+  font-size: 24px;
+}

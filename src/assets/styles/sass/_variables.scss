@@ -1,0 +1,33 @@
+$brand-primary: #2a66df;
+$brand-bg: #d4ebfd;
+
+// Sizing
+// ---
+
+// Usage: @include query(small) {...}
+$breakpoints: (
+  xs: 480px, // 480px
+  sm: 640px, //	640px
+	md: 768px, // 768px
+	lg: 992px, //	992px
+  xl: 1400px, //1400px
+	xxl: 1800px // 1800px
+);
+
+$spacing: 32px;
+$gutter: $spacing / 2;
+$spacing-text: 8px;
+$hero-height: 450px;
+
+$screen-xs: map-get($breakpoints, 'xs') - $gutter / 2 !default;
+$screen-sm: map-get($breakpoints, 'sm') - $gutter / 2 !default;
+$screen-md: map-get($breakpoints, 'md') - $gutter !default;
+$screen-lg: map-get($breakpoints, 'lg') - $gutter !default;
+$screen-xl: map-get($breakpoints, 'xl') - $gutter !default;
+
+// ANIMATION
+// ---
+
+$dur: 250ms !default;
+$ease: cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+$anim-default: all $dur $ease;
