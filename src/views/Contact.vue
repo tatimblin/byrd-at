@@ -15,7 +15,7 @@
           Get in touch
         </h2>
         <p class="Contact-body">
-          Tell us a little about what your interested in, and we'll...
+          We’re here for you when you need us! Contact Byrd Assistive Technologies today or send us an e-mail and we’ll get back to you as soon as possible.
         </p>
       </div>
 

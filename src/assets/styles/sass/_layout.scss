@@ -31,7 +31,13 @@
 
   @include query (sm)
   {
-    margin-top: unit(150);
-    margin-bottom: unit(150);
+    margin-top: unit(200);
+    margin-bottom: unit(200);
+  }
+
+  @include query (lg)
+  {
+    margin-top: unit(300);
+    margin-bottom: unit(300);
   }
 }

@@ -34,7 +34,10 @@ export default {
   },
   methods: {
     getImage () {
-      return require(`../assets/${this.img}`)
+      if (this.img !== 'logo.png') {
+        return require(`../assets/${this.img}`)
+      }
+      return 'https://via.placeholder.com/300x200'
     }
   }
 }
@@ -66,7 +69,10 @@ export default {
   &-img,
   &-content
   {
-    width: calc(50% - #{$spacing});
+    @include query (sm)
+    {
+      width: calc(50% - #{$spacing});
+    }
   }
 
   &-button

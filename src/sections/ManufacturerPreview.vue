@@ -1,16 +1,23 @@
 <template>
-  <section class="ManufacturerPreview">
-    <div class="ManufacturerPreview-container">
-      <div class="ManufacturerPreview-content">
-        <h2 class="ManufacturerPreview-title Heading--head">Our Manufacturers</h2>
-        <p class="ManufacturerPreview-body">We work with the best.</p>
+  <section class="ManuPreview">
+    <div class="ManuPreview-container">
+      <div class="ManuPreview-content">
+        <h2 class="ManuPreview-title Heading--head">Our Manufacturers</h2>
+        <p class="ManuPreview-body">We work with the best.</p>
       </div>
+      <ul class="ManuPreview-icons">
+        <img class="ManuPreview-icon" src="https://via.placeholder.com/100" alt="">
+        <img class="ManuPreview-icon" src="https://via.placeholder.com/100" alt="">
+        <router-link to="/manufacturers" class="ManuPreview-icon">
+          (See all)
+        </router-link>
+      </ul>
     </div>
   </section>
 </template>
 
 <style scoped lang="scss">
-.ManufacturerPreview
+.ManuPreview
 {
   @include l-section;
   padding: unit(100) 0;
@@ -25,6 +32,21 @@
   &-container
   {
     @include l-container;
+
+    @include query (sm)
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-icon
+  {
+    &:not(:first-child)
+    {
+      margin-left: unit(100);
+    }
   }
 }
 </style>
